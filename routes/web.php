@@ -56,6 +56,13 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
  * 中文文档见：https://d.laravel-china.org/docs/5.5/controllers#resource-controllers
  */
 Route::resource('photo', 'PhotoController');
+/**
+评论路由
+ */
+Route::get('article/{id}', 'ArticleController@show');//文章详情
+
+Route::post('comment', 'CommentController@store');//评论提交
+
 
 
 
