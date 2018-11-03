@@ -26,9 +26,9 @@
                         <h4>{{ $article->title }}</h4>
                     </a>
                 </div>
-                <div class="body">
+  {{--              <div class="body">
                     <p>{{ $article->body }}</p>
-                </div>
+                </div>--}}
             </li>
         @endforeach
     </ul>
