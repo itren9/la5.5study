@@ -10,7 +10,13 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
+/**
+    我们要做的第一件事是创建一个新的Laravel应用程序实例
+    作为laravel所有部件的“粘合剂”
+    系统绑定 所有各个部分的IoC容器。
 
+   容器  Illuminate\Foundation\Application
+ */
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
@@ -25,7 +31,7 @@ $app = new Illuminate\Foundation\Application(
 | incoming requests to this application from both the web and CLI.
 |
 */
-
+// mcj   Illuminate\Contracts\Http\Kernel    绑定的类名为 App\Http\Kernel::class
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class

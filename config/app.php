@@ -135,7 +135,10 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
+    /**
+     * 服务提供者在config/app.php中配置，laravel自动 注册到 容器中，
+       服务提供器（=服务提供者）绑定 到 服务容器。
+     */
     'providers' => [
 
         /*

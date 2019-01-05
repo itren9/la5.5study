@@ -12,6 +12,8 @@ class BroadcastServiceProvider extends ServiceProvider
      * Indicates if loading of the provider is deferred.
      *
      * @var bool
+     *
+     * mcj 是否延迟加载提供服务
      */
     protected $defer = true;
 

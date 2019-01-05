@@ -31,7 +31,7 @@ Auth::routes();
 /***
  * 前台-路由-首页 访问
  */
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index1')->name('home');
 
 /***
  * https://github.com/johnlui/Learn-Laravel-5/issues/18
@@ -67,3 +67,10 @@ Route::post('comment', 'CommentController@store');//评论提交
 
 
 Route::get('admin/article','ArticleController@test');
+
+
+//邮件发送
+
+Route::get('a','ArticleController@mailText');
+
+Route::get('b','ArticleController@mailHtml');
